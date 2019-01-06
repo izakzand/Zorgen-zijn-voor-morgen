@@ -1,0 +1,35 @@
+{
+    "name": "DUO: Zorgen zijn voor morgen",
+    "short_name": "DUO zorgenloos",
+    "icons": {
+        "128": "images/logo-128.png",
+        "64": "images/logo-64.png",
+        "48": "images/logo-48.png",
+        "16": "images/logo-16.png"
+    },
+    "version": "1.0.0",
+    "description": "Stel studieschuld zorgen uit tot na je studie.",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": [
+                "https://mijn.duo.nl/*"
+            ],
+            "js": [
+                "sos.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "browser_action": {
+        "icons": {
+            "128": "images/logo-128.png",
+            "64": "images/logo-64.png",
+            "48": "images/logo-48.png",
+            "16": "images/logo-16.png"
+        }
+    },
+    "web_accessible_resources": [
+        "images/moneyrain-small.jpeg"
+    ]
+}
